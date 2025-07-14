@@ -20,7 +20,7 @@ Tuples like `{:ok, a, b}` or `{:error, a, b}` are not supported — they’ll be
 
 ## Core Functions & Macros
 
-### `lift/2` (or `~>>`)
+### [`lift/2`](`Loe.lift/2`) or [`~>>`](`Loe.~>>/2`)
 
 Transforms a raw or success value using a function.
 
@@ -34,7 +34,7 @@ Transforms a raw or success value using a function.
 {:error, :fail} ~>> (fn _ -> :skip end).()   # => {:error, :fail}
 ```
 
-### `tfil/2` (or `<~>`)
+### [`tfil/2`](`Loe.tfil/2`) or [`<~>`](`Loe.<~>/2`)
 
 Transforms an error value using a function.
 
@@ -47,7 +47,7 @@ Transforms an error value using a function.
 # => {:error, "Reason: bad"}
 ```
 
-### `unwrap!/1`
+### [`unwrap!/1`](`Loe.unwrap!/1`)
 
 Unwraps a success value or raises on error.
 
@@ -122,8 +122,8 @@ And chain validations like this:
 # => {:error, %{message: "Validation failed: not_integer"}}
 ```
 
-`Validation` functions return wrapped results, while `Data.double/1` returns a raw value.
-Thanks to `lift/2`, Loe handles both seamlessly — so you can chain functions without worrying about return formats:
+Example `Validation` functions return wrapped results, while `Data.double/1` returns a raw value.
+Thanks to [`lift/2`](`Loe.lift/2`), Loe handles both seamlessly — so you can chain functions without worrying about return formats:
 
 ```elixir
 4
