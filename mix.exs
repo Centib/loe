@@ -2,7 +2,7 @@ defmodule Loe.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/Centib/loe"
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -42,7 +42,7 @@ defmodule Loe.MixProject do
       maintainers: ["gnjec (Centib)"],
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
-      files: ~w(.formatter.exs mix.exs README.md CHANGELOG.md LICENSE.md lib assets/logo.png),
+      files: ~w(.formatter.exs mix.exs README.md CHANGELOG.md LICENSE.md lib),
       keywords: ["ok", "error", "result", "unwrap", "lift", "pipe", "railway", "macro", "elixir", "helpers"]
     ]
   end
@@ -53,7 +53,7 @@ defmodule Loe.MixProject do
       extras: ["README.md", "CHANGELOG.md", "LICENSE.md"],
       source_ref: "v#{@version}",
       source_url: @source_url,
-      logo: "assets/logo.png"
+      logo: "assets/logo.svg"
     ]
   end
 end
