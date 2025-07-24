@@ -63,7 +63,7 @@ Add `:loe` to your `mix.exs` dependencies:
 ```elixir
 def deps do
   [
-    {:loe, "~> 0.1.1"}
+    {:loe, "~> 0.1.2"}
   ]
 end
 ```
