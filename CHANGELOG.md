@@ -1,6 +1,10 @@
 # Changelog
 
-## v0.1.1 (2025-07-14)
+## v0.1.2 (2025-07-24)
+
+- Updated project logo
+
+## v0.1.1 (2025-07-24)
 
 - Documentation improvements in `README.md`
 - Updated project logo
